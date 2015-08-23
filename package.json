@@ -4,7 +4,7 @@
   "description": "Grunt task to kill a process using either a already-known PID or pid file",
   "main": "tasks/kill.js",
   "scripts": {
-    "test": "grunt jshint jsonlint mocha"
+    "test": "grunt"
   },
   "repository": "https://github.com/brandonramirez/grunt-kill",
   "bugs": "https://github.com/brandonramirez/grunt-kill/issues",
