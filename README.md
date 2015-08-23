@@ -1,4 +1,4 @@
-grunt-kill
+grunt-kill [![Build Status](https://travis-ci.org/brandonramirez/grunt-kill.svg)](https://travis-ci.org/brandonramirez/grunt-kill)
 ==========
 
 Validate processes from grunt.
