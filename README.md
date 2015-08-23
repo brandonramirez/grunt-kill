@@ -55,6 +55,13 @@ Example with a function:
 
 Only synchronous functions are supported at this time.
 
+# Running Tests
+
+Most of the code in this plugin has unit tests.  To run them all to check for regressions, run just `grunt`, like so:
+
+    $ grunt
+
+This will lint all of the JavaScript source files, the `Gruntfile` itself, and run all unit tests.
 
 # Release History
 
