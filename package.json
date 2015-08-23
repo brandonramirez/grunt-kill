@@ -10,7 +10,10 @@
   "bugs": "https://github.com/brandonramirez/grunt-kill/issues",
   "keywords": [
     "gruntplugin",
-    "kill"
+    "kill",
+    "process",
+    "service",
+    "shutdown"
   ],
   "author": "Brandon Ramirez <brandon.s.ramirez@gmail.com> (http://www.brandonsramirez.com/)",
   "license": "MIT",
