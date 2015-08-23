@@ -1,6 +1,6 @@
 {
   "name": "grunt-kill",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Grunt task to kill a process using either a already-known PID or pid file",
   "main": "tasks/kill.js",
   "scripts": {
