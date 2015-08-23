@@ -1,4 +1,5 @@
 var findPids = require('../lib/find-pids');
+var notify = require('../lib/notify');
 
 module.exports = function (grunt) {
   "use strict";
@@ -30,15 +31,7 @@ module.exports = function (grunt) {
         grunt.log.debug('Killed process ' + pid);
       });
 
-      if (succeeded === 0 && (nxProcesses + permissionErrors) > 0) {
-        grunt.fail.warn('Unable to kill any processes.');
-      }
-      else if (permissionErrors > 0) {
-        grunt.fail.warn('Insufficient permission to terminate ' + permissionErrors + ' of the specified processes.');
-      }
-      else {
-        grunt.log.ok('Terminated ' + succeeded + ' processes, ' + nxProcesses + ' skipped.');
-      }
+      notify(succeeded, nxProcesses, permissionErrors, grunt);
     }
   });
 };
