@@ -4,7 +4,7 @@ module.exports = function (grunt) {
   "use strict";
 
   grunt.registerMultiTask("kill", "Terminate a process.", function () {
-    var pids = findPids.bind(this)(grunt);
+    var pids = findPids(this, grunt);
 
     if (pids != null) {
       var succeeded = 0;

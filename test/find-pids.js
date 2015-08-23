@@ -11,7 +11,7 @@ describe('findPids', function () {
       options: {}
     };
 
-    var pids = findPids.bind(task)(grunt);
+    var pids = findPids(task, grunt);
 
     expect(pids).to.have.length(1);
     expect(pids[0]).to.be(1234);
@@ -36,7 +36,7 @@ describe('findPids', function () {
   });
 
   it('returns an empty array of pids if nothing specified in grunt task config', function () {
-    var pids = findPids.bind({ filesSrc: [], options: {} })(grunt);
+    var pids = findPids({ filesSrc: [], options: {} }, grunt);
 
     expect(pids).to.be.an('array');
     expect(pids).to.be.empty();
@@ -52,7 +52,7 @@ function expectSingleElementPidArrayWithInputOutput(input, output, grunt) {
     }
   };
 
-  var pids = findPids.bind(task)(grunt);
+  var pids = findPids(task, grunt);
 
   expect(pids).to.be.an('array');
   expect(pids).to.have.length(1);
